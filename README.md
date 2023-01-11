@@ -1,4 +1,4 @@
-# GitHub Tutorial
+# GitHub Tutorial b1
 
 # Initialize a repo locally and push it to a remote location (GitHUb):
 
@@ -81,6 +81,15 @@ git merge <branch>
 # Deleting a branch only if it has been merged
 # Replace with -D flag to force branch to be deleted
 git branch -d <branch_merged>
+
+# Display commits contained in one branch b2 with respect to the other one b1.
+git log <b1> <b2>
+
+# Compares latests commits on both branches
+git diff <b1> <b2>
+
+# Rename a branch
+git branch -m <old_branch> <new_branch>
 ```
 
 ## Remote repos
