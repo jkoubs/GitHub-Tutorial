@@ -1,4 +1,4 @@
-# GitHub Tutorial b1
+# GitHub Tutorial 
 
 # Initialize a repo locally and push it to a remote location (GitHUb):
 
