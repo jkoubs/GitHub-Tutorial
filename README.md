@@ -1,6 +1,6 @@
 # GitHub Tutorial 
 
-# Initialize a repo locally and push it to a remote location (GitHUb):
+# Initialize a repo locally and push it to a remote location (GitHub):
 
 ```bash
 git init
