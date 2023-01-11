@@ -37,8 +37,7 @@ git add <directory>
 # Stage all changes
 git add .
 
-# Commit the staged snapshot, but instead of launching a text editor, use 
-# "commit_name" as the commit message
+# Commit the staged snapshot, but instead of launching a text editor, use "commit_name" as the commit message
 git commit -m "commit_name"
 
 # List which files are staged, unstaged, and untracked
@@ -55,12 +54,11 @@ git diff
 ## Undoing changes
 
 ```bash
-# Create new commit that undoes all of the changes made in <commit>, then 
-# apply it to the current branch
+# Create new commit that undoes all of the changes made in <commit>, then,apply it to the current branch
 git revert <commit>
 
-# Remove <file> from the staging area, but leave the working directory
-# unchanged. This unstages a file without overwriting any changes
+# Remove <file> from the staging area, but leave the working directory unchanged. 
+# This unstages a file without overwriting any changes
 git reset <file>
 
 # Shows which files would be removed from working directory
@@ -74,8 +72,7 @@ git clean -n
 # List all of the branches in your repo
 git branch
 
-# Check out a new branch named <branch> Drop the -b flag to checkout an 
-# existing branch
+# Check out a new branch named <branch> Drop the -b flag to checkout an existing branch
 git checkout -b <branch>
 
 # Merge <branch> into the current branch
@@ -96,12 +93,11 @@ git remote add <name> <url>
 # Leave off <branch> to fetch all remote refs.
 git fetch <remote> <branch>
 
-# Fetch the specified remote’s copy of current branch and immediately 
-# merge it into the local copy.
+# Fetch the specified remote’s copy of current branch and immediately merge it into the local copy.
 git pull <remote>
 
-# Push the branch to <remote>, along with necessary commits and
-objects. Creates named branch in the remote repo if it doesn’t exist.
+# Push the branch to <remote>, along with necessary commits and objects. 
+# Creates named branch in the remote repo if it doesn’t exist.
 git push <remote> <branch>
 ```
 
