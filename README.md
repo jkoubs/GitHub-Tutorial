@@ -110,3 +110,16 @@ git pull <remote>
 git push <remote> <branch>
 ```
 
+# Git branches
+
+Suppose our main branch is called <strong>main</strong>, and now we want to create a new branch <strong>b1</strong>.
+
+```bash
+# Check out and create new branch
+git checkout -b b1
+
+# Then do the modifications inside new branch
+# Once done editing, need to stage and commit:
+git commit -am "new_commit"
+```
+We now have 2 different branches
