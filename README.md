@@ -121,5 +121,15 @@ git checkout -b b1
 # Then do the modifications inside new branch
 # Once done editing, need to stage and commit:
 git commit -am "new_commit"
+
+# Finally push into remote repo
+git push
 ```
-We now have 2 different branches
+We now have 2 different branches <strong>main</strong> and <strong>b1</strong>.
+
+What if we want to merge <strong>b1</strong> into the <strong>main</strong> branch. We can do that by first going back into the <strong>main</strong> branch:
+
+```bash
+git checkout main
+git merge b1
+```
