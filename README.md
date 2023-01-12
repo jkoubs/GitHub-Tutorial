@@ -163,3 +163,4 @@ To finish, add or stage your changes and commits with a log msg, then do the mer
 
 A PR is a request to apply your changes to a repo that you do not own, or do not have access rights, or need other people to review.
 
+In general, a PR can be created once you created a new branch, edited it, staged, commited and pushed it. You create the PR through GitHub to merge your created branch into the main branch. In that way, people can review your branch, leave some comments and then if they consider it can be merged, they will merge it.
