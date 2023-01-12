@@ -2,6 +2,8 @@
 
 # Initialize a repo locally and push it to a remote location (GitHub):
 
+Open a terminal:
+
 ```bash
 git init
 ```
@@ -112,6 +114,8 @@ git push <remote> <branch>
 
 # Git branches
 
+## Create a new branch with changes
+
 Suppose our main branch is called <strong>main</strong>, and now we want to create a new branch <strong>b1</strong>.
 
 ```bash
@@ -127,9 +131,13 @@ git push
 ```
 We now have 2 different branches <strong>main</strong> and <strong>b1</strong>.
 
+## Merge branches
+
+
 What if we want to merge <strong>b1</strong> into the <strong>main</strong> branch. We can do that by first going back into the <strong>main</strong> branch:
 
 ```bash
 git checkout main
 git merge b1
+git push
 ```
