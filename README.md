@@ -130,7 +130,10 @@ git commit -am "new_commit"
 # Finally push into remote repo
 git push
 ```
-We now have 2 different branches <strong>main</strong> and <strong>b1</strong>.
+We now have 2 different branches <strong>main</strong> and <strong>b1</strong>. From here there is 2 options: 
+
+- <strong>Merge branches</strong>
+- <strong>Create a Pul Request</strong>
 
 ## Merge branches
 
@@ -142,6 +145,12 @@ git checkout main
 git merge b1
 git push
 ```
+
+## Pull Request (PR)
+
+A PR is a request to apply your changes to a repo that you do not own, or do not have access rights, or need other people to review.
+
+In general, a PR can be created once you created a new branch, edited it, staged, commited and pushed it. You create the PR through GitHub to request a person (that has the access rights) to merge your created branch into the main branch. In that way, people can review your branch, leave some comments and then if they consider it can be merged, they will merge it.
 ## Resolving merge conflicts
 
 When working with a team you and teammates yoy will create branches and merge them regularly. It could happen that 2 developers changes the same line of code creating a <strong>merge conflict</strong>.
@@ -159,8 +168,4 @@ To resolve a merge conflict, you'll have to open the file in conflict in a code 
 
 To finish, add or stage your changes and commits with a log msg, then do the merge again and it will work.
 
-## Pull Request (PR)
 
-A PR is a request to apply your changes to a repo that you do not own, or do not have access rights, or need other people to review.
-
-In general, a PR can be created once you created a new branch, edited it, staged, commited and pushed it. You create the PR through GitHub to merge your created branch into the main branch. In that way, people can review your branch, leave some comments and then if they consider it can be merged, they will merge it.
