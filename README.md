@@ -47,6 +47,7 @@ git status
 
 # Display entire commit history using the default format
 # For customization see additional options
+# add --oneline flag for a condensed version
 git log
 
 # Show unstaged changes between your index and working directory
@@ -114,7 +115,7 @@ git push <remote> <branch>
 
 # Git branches
 
-## Create a new branch with changes
+   ## Create a new branch with changes
 
 Suppose our main branch is called <strong>main</strong>, and now we want to create a new branch <strong>b1</strong>.
 
@@ -142,4 +143,3 @@ git merge b1
 git push
 ```
 
-REMOVE THIS
