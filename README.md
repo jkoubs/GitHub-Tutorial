@@ -155,6 +155,11 @@ Next, to divide the changes in the destination branch from your local changes, G
 
 Finally, Git adds a marker "<strong>>>>>>>>></strong>" to indicate the end of the lines in conflict.
 
-To resolve a merge conflict, you'll have to open the file in conflict in a code editor. Next, edit or remove the line(s) of code that should NOT stay and remove all Git markers. <strong>You'll have to create the intended code version and save the file</strong>.
+To resolve a merge conflict, you'll have to open the file in conflict in a code editor. Next, edit or remove the line(s) of code that should not stay and remove all Git markers. <strong>You'll have to create the intended code version and save the file</strong>.
 
 To finish, add or stage your changes and commits with a log msg, then do the merge again and it will work.
+
+## Pull Request (PR)
+
+A PR is a request to apply your changes to a repo that you do not own, or do not have access rights, or need other people to review.
+
