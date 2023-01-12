@@ -142,3 +142,19 @@ git checkout main
 git merge b1
 git push
 ```
+## Resolving merge conflicts
+
+When working with a team you and teammates yoy will create branches and merge them regularly. It could happen that 2 developers changes the same line of code creating a <strong>merge conflict</strong>.
+
+Git can't tell which version to keep, and you'll have to decide. Git modifies the file with conflicting changes so that you can identify your changes and the changes applied to the destination branch by someone else.
+
+The beginning of a conflict message is marked by "<strong><<<<<<<<</strong>".
+After this, the line(s) of code are the changes applied to the destination branch but that you do NOT have locally.
+
+Next, to divide the changes in the destination branch from your local changes, Git addds a marker "<strong>========</strong>". The line(s) of code afterward contain your work and what you are trying to merge.
+
+Finally, Git adds a marker "<strong>>>>>>>>></strong>" to indicate the end of the lines in conflict.
+
+To resolve a merge conflict, you'll have to open the file in conflict in a code editor. Next, edit or remove the line(s) of code that should NOT stay and remove all Git markers. <strong>You'll have to create the intended code version and save the file</strong>.
+
+To finish, add or stage your changes and commits with a log msg, then do the merge again and it will work.
