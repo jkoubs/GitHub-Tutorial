@@ -169,3 +169,10 @@ To resolve a merge conflict, you'll have to open the file in conflict in a code 
 To finish, add or stage your changes and commits with a log msg, then do the merge again and it will work.
 
 
+# Remove Git Cache
+
+```bash
+git rm -rf --cache .
+git add --all
+git commit -m "Cleared Caches"
+```
