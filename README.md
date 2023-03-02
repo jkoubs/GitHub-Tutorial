@@ -171,6 +171,9 @@ To finish, add or stage your changes and commits with a log msg, then do the mer
 
 # Remove Git Cache
 
+In some cases we would like to clear the cache. 
+For example when .gitignore does not work properly, a cache clearing is necessary.
+
 ```bash
 git rm -rf --cache .
 git add --all
