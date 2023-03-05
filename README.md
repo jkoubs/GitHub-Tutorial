@@ -179,3 +179,30 @@ git rm -rf --cache .
 git add --all
 git commit -m "Cleared Caches"
 ```
+
+# How to undo a git pull ?
+
+If by accident you git pulled and modified/overwritten your local files incorrectly, you can revert your code back to its old state and <strong>undo the git pull</strong>:
+
+
+<strong><em>Note 1:</strong></em> First do a backup of your project in case you cause things to get worse.
+
+<strong><em>Note 2:</strong></em> The following commands will cause you to lose all <strong>uncommitted</strong> changes. So the backup will help you restore that.
+
+### Reset using commit ID
+
+First, get a list of the commit history:
+
+```bash
+git reflog
+```
+
+Then choose the commit you want to revert to by selecting the <strong>appropriate commit ID</strong>.
+For example, if we want to revert from the ID <strong>4bd983d</strong>, then the following command will revert your repository to that version:
+
+```bash
+git reset --hard 4bd983d
+```
+
+
+
