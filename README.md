@@ -75,6 +75,9 @@ git clean -n
 # List all of the branches in your repo
 git branch
 
+# Check out a new branch named <branch> 
+git checkout <branch>
+
 # Check out a new branch named <branch> Drop the -b flag to checkout an existing branch
 git checkout -b <branch>
 
