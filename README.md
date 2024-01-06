@@ -149,6 +149,19 @@ git merge b1
 git push
 ```
 
+Then remove the branch that we have merge using:
+
+```bash
+git branch -d b1
+```
+
+<em>Note:</em> This command will only remove the branch locally (on your local machine) but not in your GutHub page. 
+
+To remove it from your GitHub page, you'll need to push the deletion to the remote repository. You can do this with:
+
+```bash
+git push origin --delete b1
+```
 ## Pull Request (PR)
 
 A PR is a request to apply your changes to a repo that you do not own, or do not have access rights, or need other people to review.
@@ -156,7 +169,7 @@ A PR is a request to apply your changes to a repo that you do not own, or do not
 In general, a PR can be created once you created a new branch, edited it, staged, commited and pushed it. You create the PR through GitHub to request a person (that has the access rights) to merge your created branch into the main branch. In that way, people can review your branch, leave some comments and then if they consider it can be merged, they will merge it.
 ## Resolving merge conflicts
 
-When working with a team you and teammates yoy will create branches and merge them regularly. It could happen that 2 developers changes the same line of code creating a <strong>merge conflict</strong>.
+When working with a team you and teammates you will create branches and merge them regularly. It could happen that 2 developers changes the same line of code creating a <strong>merge conflict</strong>.
 
 Git can't tell which version to keep, and you'll have to decide. Git modifies the file with conflicting changes so that you can identify your changes and the changes applied to the destination branch by someone else.
 
