@@ -8,10 +8,10 @@ Open a terminal:
 git init
 ```
 
-Next, go to GitHub and create a new repository, called **My-Repo**
+Next, go to GitHub and create a new repository, called **My-Repo**.
 Once created, follow the Quick setup instructions from GitHub.
 
-<em>**Note: **</em> You need to replace **My-Repo** with your repo name.
+<em>**Note:**</em> You need to replace **My-Repo** with your repo name.
 
 ```bash
 echo "# My-Repo" >> README.md
