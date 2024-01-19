@@ -8,17 +8,18 @@ Open a terminal:
 git init
 ```
 
-Next, go to GitHub and create a new repository.
-Here we will name it: GitHub-Tutorial.
-Once created, follow the Quick setup instructions from GitHub
+Next, go to GitHub and create a new repository, called **My-Repo**
+Once created, follow the Quick setup instructions from GitHub.
+
+<em>**Note: **</em> You need to replace **My-Repo** with your repo name.
 
 ```bash
-echo "# GitHub-Tutorial" >> README.md
+echo "# My-Repo" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin git@github.com:jkoubs/GitHub-Tutorial.git
+git remote add origin git@github.com:jkoubs/My-Repo.git
 git push -u origin main
 ```
 
