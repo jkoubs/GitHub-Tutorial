@@ -116,7 +116,7 @@ git pull <remote>
 # Creates named branch in the remote repo if it doesn’t exist.
 git push <remote> <branch>
 ```
-
+<em>**Note:**</em> **git fetch** fetches the latest changes from the remote repository without merging them into your local branch, while **git pull** fetches and merges the changes into your current branch automatically. It's generally recommended to use git fetch followed by reviewing changes before merging them, especially in collaborative environments where changes might conflict.
 # Git branches
 
    ## Create a new branch with changes
