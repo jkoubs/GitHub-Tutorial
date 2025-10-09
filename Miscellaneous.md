@@ -14,35 +14,55 @@ Git really has four main areas:
 
 When you unstage a file, it just moves from the **`Staging Area`** back to the **`Working Directory`** — your changes stay in the file.
 
-## View commit History
+## Removing Files
 
 ```bash
-git log 
+git rm file1.js # Removes from working directory and staging area
+git rm --cached file1.js # Removes from staging area only  
 ```
+
+## Renaming or Moving Files
 
 ```bash
-git log --oneline
+git mv file1.js file1.txt
 ```
+
+## Viewing the Staged/Unstaged Changes
 
 ```bash
-git log --oneline --reverse 
+git diff # Shows unstaged changes
+git diff --staged # Shows staged changes 
+git diff --cached # Same as the above
+```
+## View History
+
+```bash
+git log # Full history 
+git log --oneline # Summary  
+git log --reverse # Lists the commits from the oldest to the newest 
 ```
 
+
+## Viewing a commit 
+
+```bash
+git show 921a2ff # Shows the given commit 
+git show HEAD # Shows the last commit  
+git show HEAD~2 # Two steps before the last commit  
+git show HEAD:file.js # Shows the version of file.js stored in the last commit
+```
+## Unstaging files (undoing git add)
+
+```bash
+git restore --staged file.js # Copies the last version of file.js from repo to index
+```
 ## Discarding Local Changes
 
 ```bash
-git restore <file>
-```
-
-Undo all local changes:
-```bash
-git restore .
-```
-
-**Delete untracked files and folders**:
-
-```bash
-git clean -fd
+git restore file.js # Copies file.js from index to working directory  
+git restore file1.js file2.js # Restores multiple files in working directory 
+git restore . # Discards all local changes (except untracked files) 
+git clean -fd # Removes all untracked clean -fd
 ```
 
 ## Restoring a File to an Earlier Version
